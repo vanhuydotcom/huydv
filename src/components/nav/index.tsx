@@ -18,8 +18,8 @@ function Nav() {
                   width={32}
                   height={32}
                   quality={100}
-                  placeholder="blur"
-                  blurDataURL={BLUR_IMAGE}
+                  // placeholder="blur"
+                  // blurDataURL={BLUR_IMAGE}
                   priority
                 />
               </Link>
