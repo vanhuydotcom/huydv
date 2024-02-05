@@ -1,7 +1,6 @@
 import Image from "next/legacy/image";
 
 import logo from "@/static/images/logo.png";
-import { BLUR_IMAGE } from "@/common/constant";
 import Link from "next/link";
 
 function Nav() {
@@ -18,8 +17,6 @@ function Nav() {
                   width={32}
                   height={32}
                   quality={100}
-                  // placeholder="blur"
-                  // blurDataURL={BLUR_IMAGE}
                   priority
                 />
               </Link>
