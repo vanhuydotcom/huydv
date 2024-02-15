@@ -1,7 +1,7 @@
 "use client";
 import { PropsWithChildren } from "react";
 import dynamic from "next/dynamic";
-import Cube from "../cube";
+import Model from "../model";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -19,7 +19,7 @@ function BasicLayout({ children }: PropsWithChildren) {
       <div className="max-w-screen-lg mx-auto p-4 sm:p-6 md:p-8 lg:p-10">
         {children}
       </div>
-      <Cube />
+      <Model />
     </div>
   );
 }
