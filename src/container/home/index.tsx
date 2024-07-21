@@ -24,7 +24,7 @@ function HomePage() {
           />
         </div>
       </div>
-      <div className="flex-1 border-2 border-flax rounded-lg text-xl leading-relaxed p-4">
+      <div className="flex-1 border-2 border-flax rounded-lg text-xl leading-relaxed p-4 bg-raisin-black/65">
         <p>Hi there 👋 </p>
         <h1 className="text-2xl font-bold bg-gold w-fit px-1 text-jet">
           {`I'm`} Huy 💻
