@@ -3,15 +3,15 @@ import Image from "next/legacy/image";
 
 function HomePage() {
   return (
-    <div className="w-full h-full flex items-center gap-12">
-      <div className="relative w-72 h-72 overflow-hidden rounded-full bg-[#768287]">
+    <div className="w-full h-full flex flex-col md:flex-row items-center gap-12">
+      <div className="relative w-auto h-auto min-h-36 sm:min-h-44 lg:min-h-64  aspect-square overflow-hidden rounded-full bg-[#768287]">
         <Image
           src={avatar.src}
           blurDataURL={avatar.blurDataURL}
           alt="avatar"
           layout="fill"
-          width={200}
-          height={200}
+          width={400}
+          height={400}
           sizes="100%"
           objectFit="contain"
         />
