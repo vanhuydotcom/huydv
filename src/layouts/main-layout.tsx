@@ -12,13 +12,12 @@ function MainLayout({ children }: PropsWithChildren) {
   if (typeof window !== "undefined") {
     gsap.registerPlugin(useGSAP);
   }
-  //
   return (
     <>
       <Header />
-      <main className="max-w-screen-xl h-[calc(100vh-56px)] my-2 sm:my-4 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl h-[calc(100vh-56px)] mx-auto p-4 sm:p-6 lg:p-8">
         {children}
-      </main>
+      </div>
       <Cubic />
     </>
   );

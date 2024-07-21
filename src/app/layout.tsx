@@ -1,10 +1,44 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import dynamic from "next/dynamic";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-const Layout = dynamic(() => import("@/layouts/main-layout"));
+const proximaNova = localFont({
+  src: [
+    {
+      path: "./fonts/ProximaNova-Regular.woff",
+      weight: "normal",
+      style: "normal",
+    },
+    {
+      path: "./fonts/ProximaNova-Regular.woff2",
+      weight: "normal",
+      style: "normal",
+    },
+    {
+      path: "./fonts/ProximaNova-Bold.woff",
+      weight: "bold",
+      style: "bold",
+    },
+    {
+      path: "./fonts/ProximaNova-Bold.woff2",
+      weight: "bold",
+      style: "bold",
+    },
+    {
+      path: "./fonts/ProximaNovaA-Extrabld.woff",
+      weight: "900",
+      style: "extra-bold",
+    },
+    {
+      path: "./fonts/ProximaNovaA-Extrabld.woff2",
+      weight: "900",
+      style: "extra-bold",
+    },
+  ],
+  display: "fallback",
+});
+const MainLayout = dynamic(() => import("@/layouts/main-layout"));
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,8 +52,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen`}>
-        <Layout>{children}</Layout>
+      <body className={`${proximaNova.className} min-h-screen`}>
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );

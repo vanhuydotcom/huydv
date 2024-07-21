@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
-const HomPage = dynamic(() => import("@/pages/home"));
+const HomePage = dynamic(() => import("@/container/home"));
 
 export default function Home() {
-  return <HomPage />;
+  return <HomePage />;
 }

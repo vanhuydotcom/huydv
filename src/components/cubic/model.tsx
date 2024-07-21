@@ -18,7 +18,7 @@ function Model() {
   return (
     <group ref={groupRef} dispose={null}>
       <mesh>
-        <boxGeometry attach="geometry" args={[2, 2, 2]} />
+        <boxGeometry attach="geometry" args={[2.5, 2.5, 2.5]} />
         <meshStandardMaterial map={texture} />
       </mesh>
     </group>
