@@ -10,7 +10,10 @@ const MobileNav = dynamic(() => import("../mobile-nav"));
 function Header() {
   const logo = "/logo.png";
   return (
-    <nav className="sticky z-[999] inset-2 min-h-14 h-14 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <nav
+      className="sticky z-[999] inset-4 min-h-14 h-14 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8
+     bg-jet drop-shadow-md rounded-lg"
+    >
       <div className="relative flex flex-1 items-center justify-between sm:items-stretch">
         <div className="flex flex-shrink-0 items-center">
           <Link href={"/"}>
@@ -23,8 +26,9 @@ function Header() {
               priority
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </Link>
         </div>
         <div className="sm:ml-6">
