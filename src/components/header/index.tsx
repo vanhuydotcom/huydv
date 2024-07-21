@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import Link from "next/link";
 import dynamic from "next/dynamic";
@@ -21,7 +21,10 @@ function Header() {
               height={48}
               quality={100}
               priority
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </Link>
         </div>
         <div className="sm:ml-6">

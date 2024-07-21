@@ -1,5 +1,5 @@
 import avatar from "@/static/images/avatar.png";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 function HomePage() {
   return (
@@ -9,10 +9,11 @@ function HomePage() {
           src={avatar.src}
           blurDataURL={avatar.blurDataURL}
           alt="avatar"
-          objectFit="contain"
-          layout="fill"
+          fill
           sizes="100%"
-        />
+          style={{
+            objectFit: "contain"
+          }} />
       </div>
       <div></div>
     </div>
