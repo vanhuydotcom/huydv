@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import dynamic from "next/dynamic";
-
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-const Layout = dynamic(() => import("@/components/layouts/basic-layout"));
+const Layout = dynamic(() => import("@/layouts/main-layout"));
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-screen`}>
         <Layout>{children}</Layout>
       </body>
     </html>
