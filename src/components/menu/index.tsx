@@ -16,7 +16,7 @@ function Menu({ menuList }: IProps) {
           <Link
             key={i}
             href={menu.url}
-            className={`rounded-md px-0 pl-4 sm:px-4 py-2 text-md sm:text-lg md:font-normal
+            className={`rounded-md px-0 pl-4 sm:pl-8 py-2 text-md sm:text-lg md:font-normal
               hover:text-gold ${pathname === menu.url ? "text-gold" : ""}
               `}
           >

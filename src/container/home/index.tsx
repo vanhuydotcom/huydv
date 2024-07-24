@@ -1,19 +1,19 @@
-import avatar from "@/static/images/avatar.png";
+import avatar from "@/static/images/avatar.webp";
 import Image from "next/legacy/image";
 
 function HomePage() {
   return (
     <div className="w-full h-full flex flex-col md:flex-row items-center gap-12 select-none">
-      <div className="border-2 border-flax p-2 rounded-full">
+      <div className="flex border-2 border-flax p-2 rounded-full">
         <div
-          className="relative z-10 w-auto h-auto min-h-36 sm:min-h-44 lg:min-h-64  
+          className="relative z-10  w-auto h-auto min-h-36 sm:min-h-44 lg:min-h-64  
         aspect-square overflow-hidden rounded-full bg-[#768287] 
-        before:block before:absolute before:-inset-1 before:content-[''] before:z-20
-        "
+        before:block before:absolute before:-inset-1 before:content-[''] before:z-20"
         >
           <Image
             src={avatar.src}
             blurDataURL={avatar.blurDataURL}
+            placeholder="blur"
             alt="avatar"
             layout="fill"
             width={400}

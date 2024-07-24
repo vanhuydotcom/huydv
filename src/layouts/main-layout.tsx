@@ -15,7 +15,7 @@ function MainLayout({ children }: PropsWithChildren) {
   return (
     <>
       <Header />
-      <div className="max-w-screen-xl h-[calc(100vh-56px)] mx-auto p-4 sm:p-6 lg:p-8">
+      <div className="max-w-screen-xl h-[calc(100vh-64px)] mx-auto p-4 sm:p-6 lg:p-8">
         {children}
       </div>
       <Cubic />
